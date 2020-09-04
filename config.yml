@@ -1,0 +1,16 @@
+title: Formation of game
+description: It helps childrens to know how to make games.
+template:
+  repo: formation-of-game-template
+  name: formation-of-game
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
